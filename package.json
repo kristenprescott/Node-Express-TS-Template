@@ -1,0 +1,7 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Kristen Prescott <kprescott@mdsiinc.com>",
+  "license": "MIT"
+}

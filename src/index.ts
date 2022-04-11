@@ -1,2 +1,13 @@
-console.log("Hello TypeScript B^D");
-console.log("ch-ch-chaaanges...");
+import express from "express";
+
+const app = express();
+
+const port = process.env.PORT || 8080;
+
+app.get("/", (req) => {
+  //
+});
+
+app.listen(port, () => {
+  console.log(`Listening on port ${port}`);
+});

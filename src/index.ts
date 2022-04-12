@@ -3,6 +3,8 @@ import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
 
+import router from "./controllers/examplesController";
+
 dotenv.config();
 
 const app = express();
@@ -31,6 +33,9 @@ app.use((req, res, next) => {
   console.log({ res });
   next();
 });
+
+// app.use("/", require("./controllers/examplesController"));
+app.use("/", router);
 
 app.use((req, res, next) => {
   console.log({ req });
